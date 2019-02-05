@@ -243,7 +243,7 @@ Homebrew installation (see <http://brew.sh>):
 To install all Cask applications:
 
 ```bash
-brew cask install firefox google-chrome osxfuse visual-studio-code-insiders vmware-fusion xquartz blender gimp inkscape
+brew cask install firefox google-chrome osxfuse visual-studio-code-insiders vmware-fusion xquartz blender gimp inkscape vlc
 ```
 
 General Casks:
@@ -263,6 +263,7 @@ Graphics Casks:
 * Blender (3D graphics): `blender`
 * GIMP (raster graphics): `gimp`
 * Inkscape (vector graphics): `inkscape`
+* VLC Media Player: `vlc`
 
 Homebrew Applications
 ---------------------
