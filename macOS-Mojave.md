@@ -325,6 +325,8 @@ Extensions to install:
 * `C/C++`
 * `Code Spell Checker`
 * `CodeLLDB`
+* `Docker`
+* `Kubernetes`
 * `Markdown All in One`
 * `Markdownlint`
 * `Python`
