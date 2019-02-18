@@ -226,6 +226,16 @@ To always show Tab Bar with pinned tabs:
 
 The option will persist across the Safari reloads.
 
+Dictionary Preferences
+----------------------
+
+* Uncheck: British
+* Uncheck: British Thesaurus
+* French
+* French-English
+* Russian
+* Russian-English
+
 App Store Applications
 ----------------------
 
