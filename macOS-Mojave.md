@@ -346,9 +346,9 @@ Settings:
     "editor.rulers": [72, 80],
     "editor.fontSize": 16,
     "editor.renderWhitespace": "boundary",
-    "editor.tabSize": 4,
     "C_Cpp.clang_format_style": "Google",
     "python.pythonPath": "python3",
+    "zenMode.centerLayout": false,
 }
 ```
 
