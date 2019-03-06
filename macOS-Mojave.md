@@ -224,7 +224,11 @@ To always show Tab Bar with pinned tabs:
 * Open a new window: `Command + N`
 * View > Show Tab Bar
 
-The option will persist across the Safari reloads.
+To show link URL:
+
+* View > Show Status Bar
+
+The options will persist across the Safari reloads.
 
 Dictionary Preferences
 ----------------------
