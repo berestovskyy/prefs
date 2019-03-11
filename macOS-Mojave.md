@@ -291,11 +291,12 @@ Homebrew installation (see <http://brew.sh>):
 To install all applications:
 
 ```bash
-brew install gawk mc wget clang-format closure-compiler cmake git htop python shfmt sshfs imagemagick
+brew install bash-completion gawk mc wget clang-format closure-compiler cmake git htop python shfmt sshfs imagemagick
 ```
 
 General formulas:
 
+* Programmable completion for Bash: `bash-completion`
 * GNU AWK: `gawk`
 * Midnight Commander (file manager): `mc`
 * GNU Wget File retrieving: `wget`
@@ -411,6 +412,8 @@ export LC_ALL="en_US.UTF-8"
 
 export PS1="[\t] \u@\h:\w \$ "
 export PS2="\u@\h:\W \$ "
+
+[[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
 ```
 
 Midnight Commander (mc) Preferences
