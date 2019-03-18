@@ -392,7 +392,8 @@ Terminal Profiles
 
 .bashrc:
 ```bash
-export PS1="[\t] \u@\h:\w \$ "
+# The subshell prompt
+export PS1="\u@\h:\W \$ "
 
 alias ll="ls -GFhla"
 alias ls="ls -GFha"
@@ -410,8 +411,8 @@ export EDITOR="mcedit"
 export BLOCKSIZE="1K"
 export LC_ALL="en_US.UTF-8"
 
+# The interactive prompt
 export PS1="[\t] \u@\h:\w \$ "
-export PS2="\u@\h:\W \$ "
 
 [[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
 ```
