@@ -257,7 +257,7 @@ Homebrew installation (see <http://brew.sh>):
 To install all Cask applications:
 
 ```bash
-brew cask install firefox google-chrome osxfuse visual-studio-code-insiders vmware-fusion xquartz blender gimp inkscape vlc
+brew cask install firefox google-chrome meld osxfuse visual-studio-code-insiders vmware-fusion xquartz blender gimp inkscape vlc
 ```
 
 General Casks:
@@ -267,6 +267,7 @@ General Casks:
 
 Casks for Development:
 
+* Git GUI Merge Tool: `meld`
 * FUSE for macOS (for sshfs): `osxfuse`
 * Visual Studio Code IDE (vscode): `visual-studio-code-insiders`
 * VMWare Fusion (virtual machine hypervisor): `vmware-fusion`
@@ -481,12 +482,6 @@ Symbolic Links Installation
 * `cd /usr/local/bin && ln -s code-insiders code`
 * `cd && ln -s Library/Fonts .`
 
-Tools Installation
-------------------
-
-* TODO: `brew install https://raw.githubusercontent.com/kadwanev/bigboybrew/master/Library/Formula/sshpass.rb`
-* TODO: tools repo: copy try, passwordless to ~/bin
-
 iTunes Preferences
 ------------------
 
@@ -495,3 +490,9 @@ iTunes Preferences
 > To prevent iTunes auto start on iPhone connection:
 
 * Prevent iPods, iPhones and iPads from syncing automatically
+
+Tools Installation
+------------------
+
+* TODO: `brew install https://raw.githubusercontent.com/kadwanev/bigboybrew/master/Library/Formula/sshpass.rb`
+* TODO: tools repo: copy try, passwordless to ~/bin
