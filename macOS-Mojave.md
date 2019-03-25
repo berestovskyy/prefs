@@ -401,6 +401,8 @@ alias ls="ls -GFha"
 alias mc="mc -d -S gotar"
 alias mcedit="mcedit -d -S gotar"
 alias top="top -o cpu" # optional for macOS
+
+[[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
 ```
 
 .profile:
@@ -414,8 +416,6 @@ export LC_ALL="en_US.UTF-8"
 
 # The interactive prompt
 export PS1="[\t] \u@\h:\w \$ "
-
-[[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
 ```
 
 Midnight Commander (mc) Preferences
