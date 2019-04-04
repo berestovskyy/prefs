@@ -329,14 +329,17 @@ brew cask install visual-studio-code-insiders
 Extensions to install:
 
 * `C/C++`
+* `CMake`
 * `Code Spell Checker`
 * `CodeLLDB`
 * `Docker`
+* `hide-gitignored`
 * `Kubernetes`
 * `Markdown All in One`
 * `Markdownlint`
 * `Python`
 * `shell-format`
+* `YAML`
 
 Settings:
 
@@ -349,7 +352,7 @@ Settings:
     "editor.fontSize": 16,
     "editor.renderWhitespace": "boundary",
     "C_Cpp.clang_format_style": "Google",
-    "python.pythonPath": "python3",
+    "python.pythonPath": "/usr/local/bin/python3",
     "zenMode.centerLayout": false,
 }
 ```
