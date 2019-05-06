@@ -293,7 +293,7 @@ Homebrew installation (see <http://brew.sh>):
 To install all applications:
 
 ```bash
-brew install bash-completion gawk mc wget clang-format closure-compiler cmake git htop kubernetes-cli python shfmt sshfs imagemagick
+brew install bash-completion gawk mc watch wget clang-format closure-compiler cmake git htop kubernetes-cli python shfmt sshfs imagemagick
 ```
 
 General formulas:
@@ -301,6 +301,7 @@ General formulas:
 * Programmable completion for Bash: `bash-completion`
 * GNU AWK: `gawk`
 * Midnight Commander (file manager): `mc`
+* Tool to execute a programm periodically: `watch`
 * GNU Wget File retrieving: `wget`
 
 Formulas for Development:
