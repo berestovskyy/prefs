@@ -257,7 +257,7 @@ Homebrew installation (see <http://brew.sh>):
 To install all Cask applications:
 
 ```bash
-brew cask install firefox google-chrome meld osxfuse visual-studio-code-insiders vmware-fusion xquartz blender gimp inkscape vlc
+brew cask install firefox google-chrome meld minikube osxfuse virtualbox visual-studio-code-insiders xquartz blender gimp inkscape vlc
 ```
 
 General Casks:
@@ -268,9 +268,10 @@ General Casks:
 Casks for Development:
 
 * Git GUI Merge Tool: `meld`
+* Minikube (local Kubernetes): `minikube`
 * FUSE for macOS (for sshfs): `osxfuse`
+* Oracle VirtualBox (virtual machine hypervisor): `virtualbox`
 * Visual Studio Code IDE (vscode): `visual-studio-code-insiders`
-* VMWare Fusion (virtual machine hypervisor): `vmware-fusion`
 * XQuartz (X11 Server): `xquartz`
 
 Graphics Casks:
@@ -292,7 +293,7 @@ Homebrew installation (see <http://brew.sh>):
 To install all applications:
 
 ```bash
-brew install bash-completion gawk mc wget clang-format closure-compiler cmake git htop python shfmt sshfs imagemagick
+brew install bash-completion gawk mc wget clang-format closure-compiler cmake git htop kubernetes-cli python shfmt sshfs imagemagick
 ```
 
 General formulas:
@@ -309,6 +310,7 @@ Formulas for Development:
 * CMake Build System: `cmake`
 * Git version control system: `git`
 * Interactive Process Viewer: `htop`
+* Kubernetes kubectl tool: `kubernetes-cli`
 * Python version 3: `python`
 * Shell Language Formatter: `shfmt`
 * SSH file system: `sshfs`
@@ -333,11 +335,13 @@ Extensions to install:
 * `Code Spell Checker`
 * `CodeLLDB`
 * `Docker`
+* `Edit csv`
 * `hide-gitignored`
 * `Kubernetes`
 * `Markdown All in One`
 * `Markdownlint`
 * `Python`
+* `Rainbow CSV`
 * `shell-format`
 * `YAML`
 
