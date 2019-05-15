@@ -293,7 +293,7 @@ Homebrew installation (see <http://brew.sh>):
 To install all applications:
 
 ```bash
-brew install bash-completion gawk mc watch wget clang-format closure-compiler cmake git htop kubernetes-cli python shfmt sshfs imagemagick
+brew install bash-completion gawk mc watch wget clang-format closure-compiler cmake git htop kubernetes-cli kubernetes-helm python shfmt sshfs imagemagick
 ```
 
 General formulas:
@@ -301,17 +301,18 @@ General formulas:
 * Programmable completion for Bash: `bash-completion`
 * GNU AWK: `gawk`
 * Midnight Commander (file manager): `mc`
-* Tool to execute a programm periodically: `watch`
+* Tool to execute a program periodically: `watch`
 * GNU Wget File retrieving: `wget`
 
 Formulas for Development:
 
 * C/C++ Language Formatter: `clang-format`
-* Google Javascript Compilator: `closure-compiler`
+* Google Javascript Compiler: `closure-compiler`
 * CMake Build System: `cmake`
 * Git version control system: `git`
 * Interactive Process Viewer: `htop`
 * Kubernetes kubectl tool: `kubernetes-cli`
+* Kubernetes Package Manager: `kubernetes-helm`
 * Python version 3: `python`
 * Shell Language Formatter: `shfmt`
 * SSH file system: `sshfs`
@@ -319,6 +320,11 @@ Formulas for Development:
 Graphics formulas:
 
 * Batch image manipulation: `imagemagick`
+
+> To fix the "invalid object doesn't have additional properties" error:
+
+    rm /usr/local/bin/kubectl
+    brew link --overwrite kubernetes-cli
 
 Visual Studio Code (vscode)
 ---------------------------
@@ -337,6 +343,7 @@ Extensions to install:
 * `CodeLLDB`
 * `Docker`
 * `Edit csv`
+* `GitLens`
 * `hide-gitignored`
 * `Kubernetes`
 * `Markdown All in One`
