@@ -293,7 +293,7 @@ Homebrew installation (see <http://brew.sh>):
 To install all applications:
 
 ```bash
-brew install bash-completion gawk mc watch wget clang-format closure-compiler cmake git htop kubernetes-cli kubernetes-helm python shfmt sshfs imagemagick
+brew install bash-completion gawk mc watch wget clang-format closure-compiler cmake git htop kubernetes-cli kubernetes-helm python shfmt sshfs imagemagick wireshark
 ```
 
 General formulas:
@@ -316,6 +316,7 @@ Formulas for Development:
 * Python version 3: `python`
 * Shell Language Formatter: `shfmt`
 * SSH file system: `sshfs`
+* Network traffic analyzer: `wireshark`
 
 Graphics formulas:
 
