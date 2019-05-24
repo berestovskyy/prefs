@@ -257,7 +257,7 @@ Homebrew installation (see <http://brew.sh>):
 To install all Cask applications:
 
 ```bash
-brew cask install firefox google-chrome meld minikube osxfuse virtualbox visual-studio-code-insiders xquartz blender gimp inkscape vlc
+brew cask install firefox google-chrome meld minikube osxfuse virtualbox visual-studio-code-insiders xquartz blender gimp inkscape vlc wireshark
 ```
 
 General Casks:
@@ -273,6 +273,7 @@ Casks for Development:
 * Oracle VirtualBox (virtual machine hypervisor): `virtualbox`
 * Visual Studio Code IDE (vscode): `visual-studio-code-insiders`
 * XQuartz (X11 Server): `xquartz`
+* Network traffic analyzer: `wireshark`
 
 Graphics Casks:
 
