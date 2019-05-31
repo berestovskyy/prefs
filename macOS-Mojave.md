@@ -371,6 +371,12 @@ Settings:
 }
 ```
 
+Keyboard shortcuts:
+
+```javascript
+Tasks: Run Test Task Cmd+Shift+A
+```
+
 VS Code also requires few Homebrew applications to be installed:
 
 ```bash
