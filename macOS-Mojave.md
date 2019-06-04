@@ -294,34 +294,35 @@ Homebrew installation (see <http://brew.sh>):
 To install all applications:
 
 ```bash
-brew install bash-completion gawk mc watch wget clang-format closure-compiler cmake git htop kubernetes-cli kubernetes-helm python shfmt sshfs imagemagick wireshark
+brew install bash-completion gawk mc watch wget clang-format closure-compiler cmake git htop kubernetes-cli kubernetes-helm python shfmt sshfs wireshark ffmpeg imagemagick
 ```
 
 General formulas:
 
-* Programmable completion for Bash: `bash-completion`
+* Programmable Completion for Bash: `bash-completion`
 * GNU AWK: `gawk`
-* Midnight Commander (file manager): `mc`
-* Tool to execute a program periodically: `watch`
-* GNU Wget File retrieving: `wget`
+* Midnight Commander (File Manager): `mc`
+* Execute a Program Periodically: `watch`
+* Network Downloader: `wget`
 
 Formulas for Development:
 
 * C/C++ Language Formatter: `clang-format`
 * Google Javascript Compiler: `closure-compiler`
 * CMake Build System: `cmake`
-* Git version control system: `git`
+* Version Control System: `git`
 * Interactive Process Viewer: `htop`
-* Kubernetes kubectl tool: `kubernetes-cli`
+* Kubernetes kubectl Tool: `kubernetes-cli`
 * Kubernetes Package Manager: `kubernetes-helm`
-* Python version 3: `python`
+* Python Version 3: `python`
 * Shell Language Formatter: `shfmt`
-* SSH file system: `sshfs`
-* Network traffic analyzer: `wireshark`
+* SSH File System: `sshfs`
+* Network Traffic Analyzer: `wireshark`
 
 Graphics formulas:
 
-* Batch image manipulation: `imagemagick`
+* Video Convertor: `ffmpeg`
+* Batch Image Manipulation: `imagemagick`
 
 > To fix the "invalid object doesn't have additional properties" error:
 
