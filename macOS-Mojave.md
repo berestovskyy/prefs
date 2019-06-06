@@ -257,13 +257,14 @@ Homebrew installation (see <http://brew.sh>):
 To install all Cask applications:
 
 ```bash
-brew cask install firefox google-chrome meld minikube osxfuse virtualbox visual-studio-code-insiders xquartz blender gimp inkscape vlc wireshark
+brew cask install firefox google-chrome p7zip meld minikube osxfuse virtualbox visual-studio-code-insiders xquartz blender gimp inkscape vlc wireshark
 ```
 
 General Casks:
 
 * Firefox (browser): `firefox`
 * Google Chrome (browser): `google-chrome`
+* 7zip: `p7zip`
 
 Casks for Development:
 
