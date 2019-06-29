@@ -89,7 +89,7 @@ System Preferences > Keyboard
 
 `Shortcuts` tab > Input Sources panel:
 
-* Select next source in Input menu
+* Select the previous input source
 
 `Input Sources` tab:
 
@@ -257,17 +257,18 @@ Homebrew installation (see <http://brew.sh>):
 To install all Cask applications:
 
 ```bash
-brew cask install firefox google-chrome p7zip meld minikube osxfuse virtualbox visual-studio-code-insiders xquartz blender gimp inkscape vlc wireshark
+brew tap homebrew/cask-versions # For code-insiders
+brew cask install firefox google-chrome adoptopenjdk meld minikube osxfuse virtualbox visual-studio-code-insiders xquartz blender gimp inkscape vlc wireshark
 ```
 
 General Casks:
 
 * Firefox (browser): `firefox`
 * Google Chrome (browser): `google-chrome`
-* 7zip: `p7zip`
 
 Casks for Development:
 
+* OpenJDK (for Closure compiler): `adoptopenjdk`
 * Git GUI Merge Tool: `meld`
 * Minikube (local Kubernetes): `minikube`
 * FUSE for macOS (for sshfs): `osxfuse`
@@ -295,14 +296,16 @@ Homebrew installation (see <http://brew.sh>):
 To install all applications:
 
 ```bash
-brew install bash-completion gawk mc watch wget clang-format closure-compiler cmake git htop kubernetes-cli kubernetes-helm python shfmt sshfs wireshark ffmpeg imagemagick
+brew install aspell bash-completion gawk mc p7zip watch wget clang-format closure-compiler cmake git htop kubernetes-cli kubernetes-helm python shfmt sshfs wireshark ffmpeg imagemagick
 ```
 
 General formulas:
 
+* Spell Checker: `aspell`
 * Programmable Completion for Bash: `bash-completion`
 * GNU AWK: `gawk`
 * Midnight Commander (File Manager): `mc`
+* 7zip: `p7zip`
 * Execute a Program Periodically: `watch`
 * Network Downloader: `wget`
 
@@ -327,8 +330,10 @@ Graphics formulas:
 
 > To fix the "invalid object doesn't have additional properties" error:
 
-    rm /usr/local/bin/kubectl
-    brew link --overwrite kubernetes-cli
+```bash
+rm /usr/local/bin/kubectl
+brew link --overwrite kubernetes-cli
+```
 
 Visual Studio Code (vscode)
 ---------------------------
@@ -336,6 +341,7 @@ Visual Studio Code (vscode)
 To install VS Code:
 
 ```bash
+brew tap homebrew/cask-versions
 brew cask install visual-studio-code-insiders
 ```
 
@@ -388,7 +394,8 @@ brew install git clang-format python shfmt
 To install `pylint`:
 
 ```bash
-pip install pylint
+sudo easy_install pip
+sudo pip install pylint
 ```
 
 Terminal Preferences
@@ -404,7 +411,6 @@ Terminal Preferences
 
 `Shell` tab:
 
-* (optional) Run command: `mc`
 * When the shell exits: `Close if the shell exited cleanly`
 
 `Keyboard` tab:
@@ -416,9 +422,10 @@ Terminal Preferences
 Terminal Profiles
 -----------------
 
-.bashrc:
+File `~/.bashrc`:
+
 ```bash
-# The subshell prompt
+# The sub-shell prompt
 export PS1="\u@\h:\W \$ "
 
 alias ll="ls -GFhla"
@@ -430,7 +437,8 @@ alias top="top -o cpu" # optional for macOS
 [[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
 ```
 
-.profile:
+File `~/.profile`:
+
 ```bash
 . "${HOME}/.bashrc"
 
@@ -446,41 +454,61 @@ export PS1="[\t] \u@\h:\w \$ "
 Midnight Commander (mc) Preferences
 -----------------------------------
 
-Ubuntu: Options > Configuration:
+Ubuntu: `Options > Configuration`:
 
 * Use internal edit
 
-Options > Layout:
+`Options > Layout`:
 
 * Uncheck: Menubar visible
 * Uncheck: Hintbar visible
 
-Options > Appearance:
+`Options > Appearance`:
 
 * Skin: `gotar`
 
-Options > Confirmation...:
+`Options > Confirmation...`:
 
 * Uncheck: Confirmation|Exit
 
-Options > Display bits:
+`Options > Display bits`:
 
 * Input / display codepage: `UTF-8`
 
-Editor > Options > General
+`Editor > Options > General`:
 
 * Uncheck: Confirm before saving
+
+git Preferences
+---------------
+
+```bash
+git config --global user.name "Andriy Berestovskyy"
+git config --global user.email "berestovskyy@gmail.com"
+```
 
 SSH Preferences
 ---------------
 
-* Run: `ssh-keygen -C email`
+* Generate SSH key pair: `ssh-keygen -C a@hostname`
 * To use for some hosts different user name add to `.ssh/config` the following:
 
 ```ssh
 Host host.com
     User name
 ```
+
+GitHub Preferences
+------------------
+
+* Generate SSH key pair as described above.
+* Open https://github.com
+* Select `Settings > SSH and GPG keys` then `New SSH key`
+* Dump public key:
+   ```bash
+   cat ~/.ssh/id_rsa.pub
+   ```
+* Paste the key into GitHub.
 
 Mail Preferences
 ----------------
@@ -502,10 +530,12 @@ Docker Preferences > Advanced
 Symbolic Links Installation
 ---------------------------
 
-* `cd && ln -s /usr/local .`
-* `cd && ln -s /usr/local/etc .`
-* `cd /usr/local/bin && ln -s code-insiders code`
-* `cd && ln -s Library/Fonts .`
+```bash
+cd && ln -s /usr/local .
+cd && ln -s /usr/local/etc .
+cd /usr/local/bin && ln -s code-insiders code
+cd && ln -s Library/Fonts .
+```
 
 iTunes Preferences
 ------------------
@@ -515,6 +545,14 @@ iTunes Preferences
 > To prevent iTunes auto start on iPhone connection:
 
 * Prevent iPods, iPhones and iPads from syncing automatically
+
+Photos Preferences
+------------------
+
+`iCloud` tab:
+
+* iCloud Photos
+* Optimize Mac Storage
 
 Tools Installation
 ------------------
