@@ -195,6 +195,10 @@ Remove from Dock:
 * `System Preferences`
 * `App Store`
 
+Battery status in menu bar:
+
+* Show percentage
+
 Finder Preferences
 ------------------
 
@@ -258,7 +262,7 @@ To install all Cask applications:
 
 ```bash
 brew tap homebrew/cask-versions # For code-insiders
-brew cask install firefox google-chrome adoptopenjdk meld minikube osxfuse virtualbox visual-studio-code-insiders xquartz blender gimp inkscape vlc wireshark
+brew cask install firefox google-chrome adoptopenjdk meld minikube osxfuse virtualbox visual-studio-code-insiders wireshark xquartz blender gimp inkscape vlc
 ```
 
 General Casks:
@@ -274,8 +278,8 @@ Casks for Development:
 * FUSE for macOS (for sshfs): `osxfuse`
 * Oracle VirtualBox (virtual machine hypervisor): `virtualbox`
 * Visual Studio Code IDE (vscode): `visual-studio-code-insiders`
-* XQuartz (X11 Server): `xquartz`
 * Network traffic analyzer: `wireshark`
+* XQuartz (X11 Server): `xquartz`
 
 Graphics Casks:
 
