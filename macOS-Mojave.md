@@ -296,7 +296,7 @@ Homebrew installation (see <http://brew.sh>):
 To install all applications:
 
 ```bash
-brew install aspell bash-completion gawk mc p7zip watch wget clang-format closure-compiler cmake git htop kubernetes-cli kubernetes-helm python shfmt sshfs wireshark ffmpeg imagemagick
+brew install aspell bash-completion gawk mc p7zip watch wget clang-format cloc closure-compiler cmake git htop kubernetes-cli kubernetes-helm python shfmt sshfs wireshark ffmpeg imagemagick
 ```
 
 General formulas:
@@ -312,6 +312,7 @@ General formulas:
 Formulas for Development:
 
 * C/C++ Language Formatter: `clang-format`
+* Count Lines of Code: `cloc`
 * Google Javascript Compiler: `closure-compiler`
 * CMake Build System: `cmake`
 * Version Control System: `git`
