@@ -91,6 +91,10 @@ System Preferences > Keyboard
 
 * Select the previous input source
 
+> To use keyboard in dialogs:
+
+* All controls
+
 `Input Sources` tab:
 
 * `U.S.`
