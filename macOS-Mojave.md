@@ -173,6 +173,13 @@ System Preferences > Date & Time
 
 * Date options: `Show date`
 
+System Preferences > Time Machine
+---------------------------------
+
+`Options` dialog:
+
+* Exclude these items: `~/nob` and `~/Downloads/nob`
+
 System Preferences > Language & Region
 --------------------------------------
 
