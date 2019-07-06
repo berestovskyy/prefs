@@ -570,6 +570,13 @@ Photos Preferences
 * iCloud Photos
 * Optimize Mac Storage
 
+Preview Preferences
+-------------------
+
+`Images` tab:
+
+* Open all files in one window
+
 Tools Installation
 ------------------
 
