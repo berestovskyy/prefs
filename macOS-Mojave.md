@@ -176,6 +176,8 @@ System Preferences > Date & Time
 System Preferences > Time Machine
 ---------------------------------
 
+* Show Time Machine in menu bar
+
 `Options` dialog:
 
 * Exclude these items: `~/nob` and `~/Downloads/nob`
