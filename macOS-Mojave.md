@@ -275,7 +275,7 @@ To install all Cask applications:
 
 ```bash
 brew tap homebrew/cask-versions # For code-insiders
-brew cask install firefox google-chrome adoptopenjdk meld minikube osxfuse virtualbox visual-studio-code-insiders wireshark xquartz blender gimp inkscape vlc
+brew cask install firefox google-chrome adoptopenjdk meld minikube osxfuse virtualbox visual-studio-code-insiders wireshark xquartz blender gimp inkscape vlc viscosity
 ```
 
 General Casks:
@@ -300,6 +300,10 @@ Graphics Casks:
 * GIMP (raster graphics): `gimp`
 * Inkscape (vector graphics): `inkscape`
 * VLC Media Player: `vlc`
+
+Other Casks:
+
+* OpenVPN Client: `viscosity`
 
 Homebrew Applications
 ---------------------
