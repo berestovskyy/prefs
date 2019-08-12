@@ -28,7 +28,7 @@ System Preferences > Mission Control
 
 > To switch display off while computing:
 
-* Hot Corners > bottom-right: `Put Display to Sleep`
+* Hot Corners > bottom-left: `Put Display to Sleep`
 
 System Preferences > Security & Privacy
 ---------------------------------------
