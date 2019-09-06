@@ -23,6 +23,10 @@ For `Command + N` and `Command + T` to always work as expected:
 
 * Prefer tabs when opening documents: `Manually`
 
+> For `MacBook Pro 15"`:
+
+* Magnification: `Max`
+
 System Preferences > Mission Control
 ------------------------------------
 
@@ -42,10 +46,10 @@ System Preferences > Security & Privacy
 System Preferences > Notifications
 ----------------------------------
 
-Do Not Disturb panel:
+`Do Not Disturb` panel:
 
 * From `22:00` to `08:00`
-* When display is sleeping
+* When the display is sleeping
 
 System Preferences > Displays
 -----------------------------
@@ -83,13 +87,32 @@ System Preferences > Keyboard
 
 * Use F1, F2, etc. keys as standard function keys
 
+> For `MacBook Pro 15"`:
+
+* Touch Bar shows: `App Controls` + `Show control strip`
+* Press Fn key to: `Expand Control Strip`
+
+Note: to use functional keys in some applications, add them in
+`Shortcuts` tab > `Function Keys` panel (see below).
+
 `Text` tab:
 
 * Spelling: `Set Up...`
 
-`Shortcuts` tab > Input Sources panel:
+`Shortcuts` tab > `Input Sources` panel:
 
-* Select the previous input source
+* Select the previous input source: `^Space`
+
+> For `MacBook Pro 15"`:
+
+`Shortcuts` tab > `Function Keys` panel:
+
+* Add: `Terminal`
+* Add: `Visual Studio Code`
+* Add: `/System/Library/Frameworks/Tk.framework/Versions/<VER>/Resources/Wish.app`
+* Add: `/usr/local/Cellar/git/<VERSION>/share/git-gui/lib/Git Gui.app`
+
+Note: press `Command + Shift + .` to show hidden files in the open file dialog.
 
 > To use keyboard in dialogs:
 
@@ -142,6 +165,11 @@ System Preferences > Sharing
 
 * Computer Name
 
+System Preferences > Touch ID
+-----------------------------
+
+* Add right index, right thumb, and left index fingers.
+
 System Preferences > User & Groups
 ----------------------------------
 
@@ -161,10 +189,16 @@ Login Options panel:
 System Preferences > Siri
 -------------------------
 
+* Keyboard Shortcut: `Press Fn (Function) Space`
 * Language: `Russian`
 * Siri Voice: `Female`
 * Voice Feedback: `Off`
 * Uncheck: Show Siri in menu bar
+
+> For `MacBook Pro 15"`:
+
+* Listen for "Привет, Siri"
+* Allow Siri when locked
 
 System Preferences > Date & Time
 --------------------------------
@@ -404,7 +438,7 @@ Settings:
 Keyboard shortcuts:
 
 ```javascript
-Tasks: Run Test Task Cmd+Shift+A
+Tasks: Run Test Task Command + Shift + A
 ```
 
 VS Code also requires few Homebrew applications to be installed:
