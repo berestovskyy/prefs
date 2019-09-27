@@ -351,7 +351,7 @@ Homebrew installation (see <http://brew.sh>):
 To install all applications:
 
 ```bash
-brew install aspell bash-completion gawk mc p7zip watch wget clang-format cloc closure-compiler cmake git htop kubernetes-cli kubernetes-helm python shfmt sshfs wireshark ffmpeg imagemagick
+brew install aspell bash-completion gawk mc p7zip watch wget clang-format cloc closure-compiler cmake git htop kubernetes-cli kubernetes-helm python shfmt sshfs wireshark ffmpeg imagemagick az
 ```
 
 General formulas:
@@ -383,6 +383,10 @@ Graphics formulas:
 
 * Video Convertor: `ffmpeg`
 * Batch Image Manipulation: `imagemagick`
+
+Cloud formulas:
+
+* Azure CLI: `az`
 
 > To fix the "invalid object doesn't have additional properties" error:
 
@@ -620,5 +624,4 @@ Preview Preferences
 Tools Installation
 ------------------
 
-* TODO: `brew install https://raw.githubusercontent.com/kadwanev/bigboybrew/master/Library/Formula/sshpass.rb`
 * TODO: tools repo: copy try, passwordless to ~/bin
