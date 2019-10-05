@@ -109,6 +109,7 @@ Note: to use functional keys in some applications, add them in
 
 * Add: `Terminal`
 * Add: `Visual Studio Code`
+* Add: `Blender`
 * Add: `/System/Library/Frameworks/Tk.framework/Versions/<VER>/Resources/Wish.app`
 * Add: `/usr/local/Cellar/git/<VERSION>/share/git-gui/lib/Git Gui.app`
 
