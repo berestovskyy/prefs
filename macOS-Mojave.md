@@ -352,7 +352,7 @@ Homebrew installation (see <http://brew.sh>):
 To install all applications:
 
 ```bash
-brew install aspell bash-completion gawk mc p7zip watch wget clang-format cloc closure-compiler cmake git htop kubernetes-cli kubernetes-helm python shfmt sshfs wireshark ffmpeg imagemagick az
+brew install aspell bash-completion gawk mc p7zip watch wget clang-format cloc closure-compiler cmake git htop kubernetes-cli kubernetes-helm python rust shfmt sshfs wireshark ffmpeg imagemagick az
 ```
 
 General formulas:
@@ -376,6 +376,7 @@ Formulas for Development:
 * Kubernetes kubectl Tool: `kubernetes-cli`
 * Kubernetes Package Manager: `kubernetes-helm`
 * Python Version 3: `python`
+* Rust Language: `rust`
 * Shell Language Formatter: `shfmt`
 * SSH File System: `sshfs`
 * Network Traffic Analyzer: `wireshark`
@@ -421,6 +422,7 @@ Extensions to install:
 * `Markdownlint`
 * `Python`
 * `Rainbow CSV`
+* `Rust (rls)`
 * `shell-format`
 * `YAML`
 
