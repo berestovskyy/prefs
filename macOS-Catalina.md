@@ -6,12 +6,16 @@ System Preferences > General
 
 * Appearance: `Auto`
 * Accent color: `Green`
-* Highlight color: `Green`
 * Sidebar icon size: `Large`
 
 > To restore full screen windows:
 
 * Uncheck: Close windows when quitting an app
+
+System Preferences > Desktop & Screen Saver
+-------------------------------------------
+
+* Catalina: `Dynamic`
 
 System Preferences > Dock
 -------------------------
@@ -33,6 +37,7 @@ System Preferences > Siri
 -------------------------
 
 * Keyboard Shortcut: `Press Fn (Function) Space`
+* Keyboard Shortcut: `Hold Command Space`
 * Language: `Russian`
 * Siri Voice: `Female`
 * Voice Feedback: `Off`
@@ -56,6 +61,11 @@ System Preferences > Internet accounts
 
 Add email accounts.
 
+System Preferences > Touch ID
+-----------------------------
+
+* Add right index, right thumb, and left index fingers.
+
 System Preferences > User & Groups
 ----------------------------------
 
@@ -70,7 +80,7 @@ Guest User panel:
 
 Login Options panel:
 
-* Uncheck: Show fast user switching menu...
+* Show fast user switching menu as: `Account Name`
 
 System Preferences > Security & Privacy
 ---------------------------------------
@@ -116,6 +126,7 @@ System Preferences > Keyboard
 
 * Touch Bar shows: `App Controls` + `Show control strip`
 * Press Fn key to: `Expand Control Strip`
+* Customize control strip: `Volume Slider`, `Play/Pause`, `Mute`, `Screen Lock`
 
 Note: to use functional keys in some applications, add them in
 `Shortcuts` tab > `Function Keys` panel (see below).
@@ -123,26 +134,6 @@ Note: to use functional keys in some applications, add them in
 `Text` tab:
 
 * Spelling: `Set Up...`
-
-`Shortcuts` tab > `Input Sources` panel:
-
-* Select the previous input source: `^Space`
-
-> For `MacBook Pro 15"`:
-
-`Shortcuts` tab > `Function Keys` panel:
-
-* Add: `Terminal`
-* Add: `Visual Studio Code`
-* Add: `Blender`
-* Add: `/System/Library/Frameworks/Tk.framework/Versions/<VER>/Resources/Wish.app`
-* Add: `/usr/local/Cellar/git/<VERSION>/share/git-gui/lib/Git Gui.app`
-
-Note: press `Command + Shift + .` to show hidden files in the open file dialog.
-
-> To use keyboard in dialogs:
-
-* Use keyboard navigation to move focus between controls
 
 `Input Sources` tab:
 
@@ -152,10 +143,34 @@ Note: press `Command + Shift + .` to show hidden files in the open file dialog.
 * `Polish - Pro`
 * `Russian - PC`
 
+`Shortcuts` tab > `Input Sources` panel:
+
+* Select the previous input source: `^Space`
+
+`Shortcuts` tab > `Mission Control` panel:
+
+* Uncheck: Show Desktop: `F11`
+
+> For `MacBook Pro 15"`:
+
+`Shortcuts` tab > `Function Keys` panel:
+
+* Add: `Terminal`
+* Add: `Visual Studio Code`
+* Add: `Blender`
+* Add: `/System/Library/Frameworks/Tk.framework/Versions/Current/Resources/Wish.app`
+* Add: `/usr/local/Cellar/git/<VERSION>/share/git-gui/lib/Git Gui.app`
+
+Note: press `Command + Shift + .` to show hidden files in the open file dialog.
+
+> To use keyboard in dialogs:
+
+* Use keyboard navigation to move focus between controls
+
 `Dictation` tab:
 
 * Dictation: `On`
-* Language: `Customize...`
+* Language: `Add Language...`
 
 System Preferences > Trackpad
 -----------------------------
@@ -176,7 +191,6 @@ System Preferences > Displays
 `Night Shift` tab:
 
 * Schedule: `Sunset to Sunrise`
-* Color Temperature: `3/4`
 
 System Preferences > Energy Saver
 ---------------------------------
@@ -199,11 +213,6 @@ System Preferences > Sharing
 
 * Computer Name
 
-System Preferences > Touch ID
------------------------------
-
-* Add right index, right thumb, and left index fingers.
-
 System Preferences > Time Machine
 ---------------------------------
 
@@ -211,7 +220,7 @@ System Preferences > Time Machine
 
 `Options` dialog:
 
-* Exclude these items: `~/nob` and `~/Downloads/nob`
+* Exclude these items: `~/tmp`
 
 System Preferences > Language & Region
 --------------------------------------
@@ -231,14 +240,14 @@ Keep on Dock:
 Remove from Dock:
 
 * `Siri`
+* `Contacts`
 * `Pages`
 * `Numbers`
 * `Keynote`
-* `Contacts`
 * `System Preferences`
-* `App Store`
 * `Apple TV`
 * `Podcasts`
+* `App Store`
 
 Battery status in menu bar:
 
@@ -289,7 +298,7 @@ Dictionary Preferences
 * Russian
 * Russian-English
 
-Languages:
+Wikipedia Languages:
 
 * English
 * Fraçais
@@ -307,15 +316,14 @@ Homebrew Cask Applications
 
 Homebrew installation (see <http://brew.sh>):
 
-```bash
+```zsh
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
 To install all Cask applications:
 
-```bash
-brew tap homebrew/cask-versions # For code-insiders
-brew cask install firefox google-chrome adoptopenjdk meld minikube osxfuse virtualbox visual-studio-code-insiders wireshark xquartz blender gimp inkscape vlc viscosity
+```zsh
+brew cask install firefox google-chrome adoptopenjdk docker meld minikube osxfuse virtualbox visual-studio-code wireshark xquartz blender gimp inkscape vlc viscosity
 ```
 
 General Casks:
@@ -325,12 +333,13 @@ General Casks:
 
 Casks for Development:
 
-* OpenJDK (for Closure compiler): `adoptopenjdk`
+* Adopt OpenJDK (for Closure compiler): `adoptopenjdk`
+* Docker: `docker`
 * Git GUI Merge Tool: `meld`
 * Minikube (local Kubernetes): `minikube`
 * FUSE for macOS (for sshfs): `osxfuse`
 * Oracle VirtualBox (virtual machine hypervisor): `virtualbox`
-* Visual Studio Code IDE (vscode): `visual-studio-code-insiders`
+* Visual Studio Code IDE (vscode): `visual-studio-code`
 * Network traffic analyzer: `wireshark`
 * XQuartz (X11 Server): `xquartz`
 
@@ -350,25 +359,25 @@ Homebrew Applications
 
 Homebrew installation (see <http://brew.sh>):
 
-```bash
+```zsh
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
 To install all applications:
 
-```bash
-brew install aspell bash-completion gawk mc p7zip watch wget clang-format cloc closure-compiler cmake git htop kubernetes-cli kubernetes-helm python rust shfmt sshfs wireshark ffmpeg imagemagick az
+```zsh
+brew install aspell gawk mc p7zip watch wget zsh-completions clang-format cloc closure-compiler cmake git go htop kubernetes-cli kubernetes-helm python rust shfmt sshfs wireshark ffmpeg imagemagick az
 ```
 
 General formulas:
 
 * Spell Checker: `aspell`
-* Programmable Completion for Bash: `bash-completion`
 * GNU AWK: `gawk`
 * Midnight Commander (File Manager): `mc`
 * 7zip: `p7zip`
 * Execute a Program Periodically: `watch`
 * Network Downloader: `wget`
+* Completions for zsh: `szh-completions`
 
 Formulas for Development:
 
@@ -377,6 +386,7 @@ Formulas for Development:
 * Google Javascript Compiler: `closure-compiler`
 * CMake Build System: `cmake`
 * Version Control System: `git`
+* Go Language: `go`
 * Interactive Process Viewer: `htop`
 * Kubernetes kubectl Tool: `kubernetes-cli`
 * Kubernetes Package Manager: `kubernetes-helm`
@@ -397,7 +407,7 @@ Cloud formulas:
 
 > To fix the "invalid object doesn't have additional properties" error:
 
-```bash
+```zsh
 rm /usr/local/bin/kubectl
 brew link --overwrite kubernetes-cli
 ```
@@ -407,9 +417,8 @@ Visual Studio Code (vscode)
 
 To install VS Code:
 
-```bash
-brew tap homebrew/cask-versions
-brew cask install visual-studio-code-insiders
+```zsh
+brew cask install visual-studio-code
 ```
 
 Extensions to install:
@@ -444,24 +453,31 @@ Settings:
     "C_Cpp.clang_format_style": "Google",
     "python.pythonPath": "/usr/local/bin/python3",
     "zenMode.centerLayout": false,
+    "window.zoomLevel": 1,
+    "terminal.integrated.scrollback": 10000,
 }
 ```
 
 Keyboard shortcuts:
 
 ```javascript
-Tasks: Run Test Task Command + Shift + A
+[
+    {
+        "key": "shift+cmd+a",
+        "command": "workbench.action.tasks.test"
+    }
+]
 ```
 
 VS Code also requires few Homebrew applications to be installed:
 
-```bash
+```zsh
 brew install git clang-format python shfmt
 ```
 
 To install `pylint`:
 
-```bash
+```zsh
 sudo easy_install pip
 sudo pip install pylint
 ```
@@ -477,6 +493,10 @@ Terminal Preferences
 
 * Font > Change... > Size: `18pt`
 
+`Window` tab:
+
+* Rows: `43`
+
 `Shell` tab:
 
 * When the shell exits: `Close if the shell exited cleanly`
@@ -490,33 +510,22 @@ Terminal Preferences
 Terminal Profiles
 -----------------
 
-File `~/.bashrc`:
+File `~/.zshrc`:
 
-```bash
-# The sub-shell prompt
-export PS1="\u@\h:\W \$ "
-
+```zsh
 alias ll="ls -GFhla"
 alias ls="ls -GFha"
 alias mc="mc -d -S gotar"
 alias mcedit="mcedit -d -S gotar"
-alias top="top -o cpu" # optional for macOS
-
-[[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
-```
-
-File `~/.profile`:
-
-```bash
-. "${HOME}/.bashrc"
+alias top="top -o cpu" # for macOS
 
 export PATH="${HOME}/bin:${PATH}"
 export EDITOR="mcedit"
-export BLOCKSIZE="1K"
 export LC_ALL="en_US.UTF-8"
 
-# The interactive prompt
-export PS1="[\t] \u@\h:\w \$ "
+fpath=(/usr/local/share/zsh-completions $fpath)
+autoload -Uz compinit
+compinit
 ```
 
 Midnight Commander (mc) Preferences
@@ -531,13 +540,13 @@ Ubuntu: `Options > Configuration`:
 * Uncheck: Menubar visible
 * Uncheck: Hintbar visible
 
-`Options > Appearance`:
-
-* Skin: `gotar`
-
 `Options > Confirmation...`:
 
 * Uncheck: Confirmation|Exit
+
+`Options > Appearance`:
+
+* Skin: `gotar`
 
 `Options > Display bits`:
 
@@ -550,7 +559,7 @@ Ubuntu: `Options > Configuration`:
 git Preferences
 ---------------
 
-```bash
+```zsh
 git config --global user.name "Andriy Berestovskyy"
 git config --global user.email "berestovskyy@gmail.com"
 ```
@@ -573,7 +582,7 @@ GitHub Preferences
 * Open https://github.com
 * Select `Settings > SSH and GPG keys` then `New SSH key`
 * Dump public key:
-   ```bash
+   ```zsh
    cat ~/.ssh/id_rsa.pub
    ```
 * Paste the key into GitHub.
@@ -585,10 +594,17 @@ Mail Preferences
 
 * Message Format: `Plain Text`
 
+`Fonts & Colors` tab:
+
+* Font size: `14`
+
 Docker Installation and Preferences
 -----------------------------------
 
-Install Docker from <http://docker.com> or from Homebrew Cask.
+Install Docker:
+```zsh
+brew cask install docker
+```
 
 Docker Preferences > Advanced
 
@@ -598,21 +614,15 @@ Docker Preferences > Advanced
 Symbolic Links Installation
 ---------------------------
 
-```bash
-cd && ln -s /usr/local .
-cd && ln -s /usr/local/etc .
-cd /usr/local/bin && ln -s code-insiders code
-cd && ln -s Library/Fonts .
+```zsh
+cd && ln -s /usr/local
+cd && ln -s /usr/local/etc
+cd && ln -s Library/Fonts
+cd && mkdir tmp
+cd Desktop && ln -s ../tmp
+cd Documents && ln -s ../tmp
+cd Downloads && ln -s ../tmp
 ```
-
-iTunes Preferences
-------------------
-
-`Devices` tab:
-
-> To prevent iTunes auto start on iPhone connection:
-
-* Prevent iPods, iPhones and iPads from syncing automatically
 
 Photos Preferences
 ------------------
