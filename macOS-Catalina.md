@@ -366,7 +366,7 @@ Homebrew installation (see <http://brew.sh>):
 To install all applications:
 
 ```zsh
-brew install aspell gawk mc p7zip watch wget zsh-completions clang-format cloc closure-compiler cmake git go htop kubernetes-cli kubernetes-helm python rust shfmt sshfs wireshark ffmpeg imagemagick az
+brew install aspell gawk mc p7zip watch wget zsh-completions buildifier clang-format cloc closure-compiler cmake git go htop kubernetes-cli kubernetes-helm python rust shfmt sshfs wireshark ffmpeg imagemagick az
 ```
 
 General formulas:
@@ -381,6 +381,7 @@ General formulas:
 
 Formulas for Development:
 
+* Bazel Files Formatter: `buildifier`
 * C/C++ Language Formatter: `clang-format`
 * Count Lines of Code: `cloc`
 * Google Javascript Compiler: `closure-compiler`
@@ -423,6 +424,7 @@ brew cask install visual-studio-code
 
 Extensions to install:
 
+* `Bazel`
 * `C/C++`
 * `CMake`
 * `Code Spell Checker`
@@ -472,7 +474,7 @@ Keyboard shortcuts:
 VS Code also requires few Homebrew applications to be installed:
 
 ```zsh
-brew install git clang-format python shfmt
+brew install buildifier clang-format git python shfmt
 ```
 
 To install `pylint`:
