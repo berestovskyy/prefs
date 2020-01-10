@@ -449,7 +449,7 @@ Settings:
     "files.autoSave": "afterDelay",
     "files.autoSaveDelay": 100,
     "editor.dragAndDrop": false,
-    "editor.rulers": [72, 80],
+    "editor.rulers": [72, 100],
     "editor.fontSize": 16,
     "editor.renderWhitespace": "boundary",
     "C_Cpp.clang_format_style": "Google",
@@ -457,6 +457,8 @@ Settings:
     "zenMode.centerLayout": false,
     "window.zoomLevel": 1,
     "terminal.integrated.scrollback": 10000,
+    "editor.wordWrap": "on",
+    "C_Cpp.clang_format_fallbackStyle": "LLVM",
 }
 ```
 
