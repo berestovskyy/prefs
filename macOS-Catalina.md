@@ -440,6 +440,7 @@ Extensions to install:
 * `Rainbow CSV`
 * `Rust (rls)`
 * `shell-format`
+* `vscode-proto3`
 * `YAML`
 
 Settings:
@@ -523,7 +524,7 @@ alias mc="mc -d -S gotar"
 alias mcedit="mcedit -d -S gotar"
 alias top="top -o cpu" # for macOS
 
-export PATH="${HOME}/bin:${PATH}"
+export PATH="${HOME}/bin:/usr/local/sbin:${PATH}"
 export EDITOR="mcedit"
 export LC_ALL="en_US.UTF-8"
 
@@ -623,9 +624,10 @@ cd && ln -s /usr/local
 cd && ln -s /usr/local/etc
 cd && ln -s Library/Fonts
 cd && mkdir tmp
-cd Desktop && ln -s ../tmp
-cd Documents && ln -s ../tmp
-cd Downloads && ln -s ../tmp
+cd ~/Desktop && ln -s ../tmp
+cd ~/Documents && ln -s ../tmp
+cd ~/Downloads && ln -s ../tmp
+sudo chmod g-w /usr/local/share
 ```
 
 Photos Preferences
