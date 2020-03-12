@@ -501,6 +501,7 @@ Terminal Preferences
 `Window` tab:
 
 * Rows: `43`
+* Scrollback: Limit number of rows to: `10000`
 
 `Shell` tab:
 
