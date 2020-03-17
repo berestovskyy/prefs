@@ -441,6 +441,7 @@ Extensions to install:
 * `Rust (rls)`
 * `shell-format`
 * `vscode-proto3`
+* `vscode-lua`
 * `YAML`
 
 Settings:
