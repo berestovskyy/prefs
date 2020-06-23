@@ -367,6 +367,8 @@ To install all applications:
 
 ```zsh
 brew install aspell gawk mc p7zip watch wget zsh-completions buildifier clang-format cloc closure-compiler cmake git go htop kubernetes-cli kubernetes-helm python rust shfmt sshfs wireshark ffmpeg imagemagick az
+
+brew tap derailed/k9s && brew install k9s
 ```
 
 General formulas:
@@ -389,7 +391,8 @@ Formulas for Development:
 * Version Control System: `git`
 * Go Language: `go`
 * Interactive Process Viewer: `htop`
-* Kubernetes kubectl Tool: `kubernetes-cli`
+* Kubernetes Cluster CLI: `brew tap derailed/k9s && brew install k9s`
+* Kubernetes `kubectl` Tool: `kubernetes-cli`
 * Kubernetes Package Manager: `kubernetes-helm`
 * Python Version 3: `python`
 * Rust Language: `rust`
