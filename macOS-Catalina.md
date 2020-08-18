@@ -366,7 +366,7 @@ Homebrew installation (see <http://brew.sh>):
 To install all applications:
 
 ```zsh
-brew install aspell gawk mc p7zip watch wget zsh-completions buildifier clang-format cloc closure-compiler cmake git go htop kubernetes-cli kubernetes-helm python rust shfmt sshfs wireshark ffmpeg imagemagick az
+brew install aspell gawk mc p7zip watch wget zsh-completions buildifier clang-format cloc closure-compiler cmake git go htop kubernetes-cli kubernetes-helm python rust shfmt sshfs wireshark ffmpeg imagemagick az awscli
 
 brew tap derailed/k9s && brew install k9s
 ```
@@ -408,6 +408,7 @@ Graphics formulas:
 Cloud formulas:
 
 * Azure CLI: `az`
+* Amazon CLI: `awscli`
 
 > To fix the "invalid object doesn't have additional properties" error:
 
