@@ -366,7 +366,7 @@ Homebrew installation (see <http://brew.sh>):
 To install all applications:
 
 ```zsh
-brew install aspell gawk mc p7zip watch wget zsh-completions buildifier clang-format cloc closure-compiler cmake git go htop kubernetes-cli kubernetes-helm python rust shfmt sshfs wireshark ffmpeg imagemagick az awscli
+brew install aspell gawk mc p7zip watch wget zsh-completions buildifier clang-format cloc closure-compiler cmake git go htop kubernetes-cli kubernetes-helm python rust shfmt sshfs wireshark ffmpeg imagemagick potrace az awscli
 
 brew tap derailed/k9s && brew install k9s
 ```
@@ -404,6 +404,7 @@ Graphics formulas:
 
 * Video Convertor: `ffmpeg`
 * Batch Image Manipulation: `imagemagick`
+* Image Tracing Tool: `potrace`
 
 Cloud formulas:
 
