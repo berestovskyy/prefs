@@ -283,12 +283,13 @@ Homebrew Applications
 ---------------------
 
 ```zsh
-brew install aspell gawk mc p7zip watch wget zsh-completions clang-format cloc git git-gui htop python rustup-init shfmt ffmpeg imagemagick potrace
+brew install aspell coreutils gawk mc p7zip watch wget zsh-completions clang-format cloc git git-gui htop python rustup-init shfmt ffmpeg imagemagick potrace
 ```
 
 General formulas:
 
 * Spell Checker: `aspell`
+* GNU File, Shell, and Text utilities: `coreutils`
 * GNU AWK: `gawk`
 * Midnight Commander (File Manager): `mc`
 * 7zip: `p7zip`
@@ -345,13 +346,20 @@ Extensions to install:
 * `C/C++`
 * `Code Spell Checker`
 * `GitLens`
+* `JSON5 syntax`
 * `Hide Gitignored`
 * `Markdown All in One`
 * `Markdownlint`
+* `Nix Environment Selector`
+* `pre-commit-vscode`
 * `Prettier - Code formatter`
 * `Python`
+* `Remote - SSH`
 * `Rust`
+* `rust-analyzer`
 * `shell-format`
+* `Terminal`
+* `TODO Highlight`
 * `vscode-proto3`
 * `YAML`
 
