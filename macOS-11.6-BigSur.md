@@ -370,10 +370,16 @@ Settings:
     "files.autoSave": "afterDelay",
     "files.autoSaveDelay": 100,
     "editor.rulers": [72, 100],
-    "editor.fontSize": 16,
+    "editor.fontSize": 15,
     "window.zoomLevel": -1,
     "editor.renderWhitespace": "boundary",
-    "C_Cpp.updateChannel": "Insiders",
+    "editor.wordWrap": "on",
+    "editor.minimap.size": "fill",
+    "editor.minimap.showSlider": "always",
+    "workbench.editor.tabCloseButton": "left",
+    "zenMode.centerLayout": false,
+    "rust-analyzer.lens.enable": false,
+    "gitlens.codeLens.enabled": false,
 }
 ```
 
