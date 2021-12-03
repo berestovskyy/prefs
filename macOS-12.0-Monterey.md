@@ -138,6 +138,16 @@ System Preferences > Keyboard
 
 * Uncheck: Show Desktop: `F11`
 
+**Shortcuts > App Shortcuts:**
+
+> To avoid accidental quits from Safari:
+
+Add shortcut:
+
+* Application: `Safari`
+* Menu Title: `Quit Safari`
+* Keyboard Shortcut: `Option + Command + Q`
+
 **Shortcuts > Function Keys:**
 
 * Add: `Terminal`
