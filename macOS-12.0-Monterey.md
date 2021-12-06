@@ -198,6 +198,13 @@ System Preferences > Language & Region
 
 At the very end, remove all the languages but `English`
 
+System Preferences > Sharing
+----------------------------
+
+> To fix wireless headphones issue:
+
+* Uncheck: AirPlay Receiver
+
 Desktop Preferences
 -------------------
 
@@ -486,12 +493,14 @@ GitHub Preferences
 ------------------
 
 * Generate SSH key pair as described above.
-* Open https://github.com
+* Open [github.com](https://github.com)
 * Select `Settings > SSH and GPG keys` then `New SSH key`
 * Dump public key:
+
    ```zsh
    cat ~/.ssh/id_rsa.pub
    ```
+
 * Paste the key into GitHub.
 
 Mail Preferences
