@@ -470,7 +470,7 @@ Midnight Commander (mc) Preferences
 
 * Uncheck: Confirm before saving
 
-git Preferences
+Git Preferences
 ---------------
 
 ```zsh
@@ -482,11 +482,22 @@ SSH Preferences
 ---------------
 
 * Generate SSH key pair: `ssh-keygen -C a@hostname`
-* To use for some hosts different user name add to `.ssh/config` the following:
+
+> To use for some hosts different user name add to `.ssh/config` the following:
 
 ```ssh
 Host host.com
     User name
+```
+
+> To use GitHub with two different accounts add to `.ssh/config`:
+
+```ssh
+Host github-as-berestovskyy
+  HostName github.com
+  User git
+  IdentityFile /Users/a/.ssh/id_rsa.berestovskyy
+  IdentitiesOnly yes
 ```
 
 GitHub Preferences
@@ -502,6 +513,14 @@ GitHub Preferences
    ```
 
 * Paste the key into GitHub.
+
+> To use GitHub with two different accounts, use the following remote:
+
+```zsh
+origin git@github-as-berestovskyy:berestovskyy/prefs.git
+```
+
+See **SSH Preferences** for adding `github-as-berestovskyy` into SSH.
 
 Mail Preferences
 ----------------
