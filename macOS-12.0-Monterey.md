@@ -117,9 +117,9 @@ System Preferences > Keyboard
 * Key Repeat: `Fast`
 * Delay Until Repeat: `Short`
 * Check: Turn keyboard backlight off after: `10 secs of inactivity`
+* Touch Bar shows: `Expanded COntrol Strip`
 * Press Fn key to: `Start Dictation (Press Fn Twice)`
-* Press and hold Fn key to: `Expand Control Strip`
-* Customize Control Strip: `Brightness Slider`, `Volume Slider`, `Mute`, `Play/Pause`
+* Press and hold Fn key to: `Show F1, F2, etc. Keys`
 * Expanded Control Strip: `Default`, remove `Siri`, add `Do Not Disturb`
 
 **Text:**
