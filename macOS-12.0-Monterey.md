@@ -120,7 +120,7 @@ System Preferences > Keyboard
 * Touch Bar shows: `Expanded COntrol Strip`
 * Press Fn key to: `Start Dictation (Press Fn Twice)`
 * Press and hold Fn key to: `Show F1, F2, etc. Keys`
-* Expanded Control Strip: `Default`, remove `Siri`, add `Do Not Disturb`
+* Expanded Control Strip: `Default`, remove `Siri`, `Mission Control`, `Launchpad`, add space before and after the items (i.e. make space for fingers)
 
 **Text:**
 
