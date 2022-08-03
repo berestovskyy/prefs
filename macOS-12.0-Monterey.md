@@ -360,6 +360,7 @@ Extensions to install:
 
 * `C/C++`
 * `Code Spell Checker`
+* `crates`
 * `GitLens`
 * `JSON5 syntax`
 * `Hide Gitignored`
@@ -496,9 +497,21 @@ Host host.com
 Host github-as-berestovskyy
   HostName github.com
   User git
-  IdentityFile /Users/a/.ssh/id_rsa.berestovskyy
+  IdentityFile ~/.ssh/id_rsa.berestovskyy
   IdentitiesOnly yes
+  AddKeysToAgent no
 ```
+
+> To add ssh keys to the Keychain:
+
+1. Run: `ssh-add --apple-use-keychain`
+2. Add to `.ssh/config`:
+
+    ```ssh
+    Host *
+      UseKeychain yes
+      AddKeysToAgent yes
+    ```
 
 GitHub Preferences
 ------------------
